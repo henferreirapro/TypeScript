@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/henferreirapro/TypeScript/issues"
   },
-  "homepage": "https://github.com/henferreirapro/TypeScript#readme"
+  "homepage": "https://github.com/henferreirapro/TypeScript#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }
