@@ -118,7 +118,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.ts":[function(require,module,exports) {
-console.log("Olá Mundo");
+function somar(a, b) {
+  return a + b;
+}
+
+somar(2, 5);
+somar("2", "5"); //aqui recebemos um aviso que o argumento não é do tipo number.
+
+function verificaString(palavra) {
+  return palavra;
+}
+
+verificaString(2);
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
