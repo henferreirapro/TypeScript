@@ -118,7 +118,16 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.ts":[function(require,module,exports) {
-
+/* Interfaces são usadas para definir contratos de estruturas de dados. */
+var animal = {
+  nome: "Leao",
+  idade: 8,
+  tipo: "Terrestre",
+  atributoPredominante: "Corredor",
+  formaAtaque: "Garras",
+  mordida: true,
+  QTDGarras: 4
+};
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -147,7 +156,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61239" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56524" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
